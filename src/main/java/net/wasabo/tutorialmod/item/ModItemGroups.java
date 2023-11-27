@@ -20,10 +20,16 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.RAW_RUBY);
 
-                        entries.add(Items.DIAMOND);
+                        entries.add(ModItems.METAL_DETECTOR);
+
 
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
+
+                        entries.add(ModBlocks.RUBY_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
+                        entries.add(ModBlocks.NETHER_RUBY_ORE);
+                        entries.add(ModBlocks.ENDSTONE_RUBY_ORE);
                     }).build());
     public static void registerItemGroups(){
         TutorialMod.LOGGER.info("Registering Item Groups");
