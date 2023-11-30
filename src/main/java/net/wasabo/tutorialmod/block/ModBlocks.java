@@ -13,6 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.wasabo.tutorialmod.TutorialMod;
+import net.wasabo.tutorialmod.block.custom.SoundBlock;
 
 public class ModBlocks {
 
@@ -34,6 +35,8 @@ public class ModBlocks {
     public static final Block ENDSTONE_RUBY_ORE = registerBlock("end_stone_ruby_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4f), UniformIntProvider.create(4, 7)));
 
+    public static final Block SOUND_BLOCK = registerBlock("sound_block",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
 
     private static Block registerBlock(String name, Block block){
